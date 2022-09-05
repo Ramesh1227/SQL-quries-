@@ -53,9 +53,9 @@ BEGIN try
             BEGIN
                 PRINT 'start updating Logistic country version'
 
-                EXEC  @return_value = [dbo].[spImportTranportCostUpdateLCVersionNumber]
+                EXEC  @return_value = [dbo].[XXXX]
                     @LogisticCountryId = @LogisticCountryId,
-                    @VersionCreatedBy = 'HM/JG',
+                    @VersionCreatedBy = 'XX',
                     @VersionCreatedTimeStamp = @VersionCreatedTimeStamp
                 SELECT 'Return Value' = @return_value
 
@@ -170,7 +170,7 @@ BEGIN try
                 --print @CO2kgkg
                 PRINT 'start Importing Cost'
 
-                EXEC  [dbo].[spImportTransportCostLogisticCountry]
+                EXEC  [dbo].[XXXX]
                     @LogisticCountryId = @LogisticCountryId,
                     @CountryOfDeliveryId =  @CountryOfDeliveryId,
                     @ModeOfTransportId = @ModeOfTransport_Id,
